@@ -189,9 +189,8 @@ document.getElementById('btreinicializarLista').addEventListener('click', ()=>{
 let flagCnt4Chk=0;
 let Names = [];
 let counting4Check = 0;
-document.getElementById('inpt').addEventListener('keydown', function(e) {
-
-    if (e.key === 'Enter') {
+document.getElementById('inpt').addEventListener('blur', ()=> {
+            counting4Check = 0
             for (let v=0; v<Names.length; v++)
             {
                 if (Names[v] === document.getElementById('inpt').value)
@@ -208,5 +207,5 @@ document.getElementById('inpt').addEventListener('keydown', function(e) {
                     counting4Check++;
                 }
     }
-});
+);
 
