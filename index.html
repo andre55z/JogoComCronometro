@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo com Cronometro!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Jogo com Cronômetro!</h1></header>
+    <div id="AdicionarParticipante" >
+        <h3>Adicionar participante</h3>
+        <input id="inpt" type="text" placeholder="Nickname (pressione enter)" > 
+    </div>
+    <div id="Particiante">
+        <h3>Participante</h3>
+        <select id="slcPart">
+ 
+            <option value=""></option>
+        </select>
+
+    </div>
+    <br>
+    <div id="cont">
+
+        <div id="cronometro">
+            <h3>Cronômetro</h3>
+            <div id="numbs">
+                <p id="numeros">0</p><p>.</p><p id="Milis">0</p>
+            </div>
+            <br>
+            <div id="bts">
+                <button id="btiniciar">Iniciar</button><button id="btparar" >Parar</button><button id="btreset" >Reiniciar</button>
+            </div>
+            <br>
+            <p></p>
+        </div>
+        <div id="lst">
+            <p id="lista"></p>
+            <button id='btreinicializarLista' onclick="reinicializaLista()">Reinicializar Lista</button>
+        </div>
+    </div>
+
+</body>
+<script src="code.js"></script>
+</html>
